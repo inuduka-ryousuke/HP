@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yorimichi cafe</title>
+
+    <!-- フォント -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jquery -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#about"]').on('click', function (event) {
+                event.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 700);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#menu"]').on('click', function (event) {
+                event.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 700);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#news"]').on('click', function (event) {
+                event.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 700);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#contact"]').on('click', function (event) {
+                event.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 700);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="page-header wrapper">
+            <h1>yorimichi cafe</h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#news">news</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- スライド画像 -->
+
+        <div class="slideshow">
+            <img id="slide1" class="slide show" src="img/top.jpg" alt="スライド1">
+            <img id="slide2" class="slide" src="img/top2.jpg" alt="スライド2">
+        </div>
+
+        <!-- about -->
+
+        <div class="about">
+            <h2 id="about" class="animate delay-1">about</h2>
+            <h3 class="animate delay-1">ーゆるやかに過ごす憩いの場所ー</h3>
+
+            <div class="about-left">
+                <div class="about-text animate delay-2">
+                    <p>コーヒーの香りと優しい風の音に包まれながら過ごせる「yorimichi cade」。</p>
+                    <p>普段の生活にちょっとした寄り道を提供したいと思ったのがyorimichi cafeができたきっかけです。</p>
+                    <p>ちょっと疲れたな...と感じたら寄っていきませんか？</p>
+                    <p>たまには寄り道もいいでしょ。</p>
+                    <p>寄り道という贅沢をしていきましょう。</p>
+                    <p>何気ない一日を”特別な一日”に。</p>
+                    <p>一杯のコーヒーと、静かなひとときをお過ごしください。</p>
+                </div>
+
+                <div class="about-image animate delay-3">
+                    <img src="img/about-image.jpg" alt="コーヒーメーカーの画像">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <h2 id="menu"class="animate delay-1">menu</h2>
+            <h3 class="animate delay-1">メニュー</h3>
+            <table class="animate delay-2">
+                <tr>
+                    <td>本格ブレンドコーヒー</td>
+                    <td>￥450</td>
+                </tr>
+                <tr>
+                    <td>カフェモカ</td>
+                    <td>￥580</td>
+                </tr>
+                <tr>
+                    <td>カフェラテ</td>
+                    <td>￥580</td>
+                </tr>
+                <tr>
+                    <td>自家製ケーキ</td>
+                    <td>￥600</td>
+                </tr>
+                <tr>
+                    <td>アイス</td>
+                    <td>￥420</td>
+                </tr>
+                <tr>
+                    <td>パンケーキ</td>
+                    <td>￥800</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- お知らせ -->
+
+        <div class="newslist">
+            <h2 id="news" class="animate delay-1">news</h2>
+            <h3 class="animate delay-1">お知らせ</h3>
+            <ul class="animate delay-2">
+                <li>
+                    <a href="page.html">2019/04/01 ホームページをリニューアルしました。</a>
+                </li>
+                <li>
+                    <a href="page.html">2018/12/24 年末年始の営業時間について</a>
+                </li>
+                <li>
+                    <a href="page.html">2018/12/10 臨時休業のお知らせ</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 画像 -->
+
+        <div class="photo">
+            <img src="img/photo.jpg" alt="コーヒー画像">
+        </div>
+
+        <!-- お問い合わせ -->
+
+        <div class="contact">
+            <h2 id="contact"class="animate delay-1">contact</h2>
+            <h3 class="animate delay-1">お問い合わせ</h3>
+            <form action="#" class="animate delay-2">
+                <div>
+                    <label for="name">お名前(氏名)</label>
+                    <input type="text" id="name" name="your-name" autocomplete="name">
+                </div>
+                <div>
+
+                    <label for="kana">お名前（フリガナ）</label>
+                    <input type="text" id="kana" name="your-kana" autocomplete="honoeific-suffix">
+                </div>
+
+                <div>
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="your-email" autocomplete="email">
+                </div>
+
+                <div>
+                    <label for="email-confirm">確認用メールアドレス</label>
+                    <input type="email" id="email-confirm" name="your-email-confirm" autocomplete="email">
+                </div>
+
+                <div>
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="your-message"></textarea>
+                </div>
+
+                <input type="submit" class="button" value="送信">
+            </form>
+        </div>
+
+        <button id="top-button" class="top">
+         ▲
+        </button>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <small>&copy;yorimachi cafe.</small>
+    </footer>
+    
+</body>
+
+<!-- javascript　-->>
+
+<script src="javascript/script.js"></script>
+
+</html>
